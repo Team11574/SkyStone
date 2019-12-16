@@ -12,7 +12,5 @@ teamFiles.each { File teamDirectory ->
     }
 }
 
-// If no team-provided directories were found, include the TeamCode directory.
-if (!teamDirectoryFound) {
-    include ':TeamCode'
-}
+// Always include the TeamCode module, meh.
+include ':TeamCode'
